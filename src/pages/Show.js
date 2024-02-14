@@ -1,11 +1,13 @@
 import { useLoaderData, Form } from "react-router-dom";
+import '../index.css';
+import '../style.scss'
 
 const Show = () => {
     const person = useLoaderData()
     console.log(person)
     return(
         <div className="person">
-            <h3>{person.name}</h3>
+            <h1>{person.name}</h1>
             <h3>{person.title}</h3>
             <img src = {person.image} alt={person.name}></img>
 
